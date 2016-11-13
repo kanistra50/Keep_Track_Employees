@@ -15,7 +15,6 @@
 <!--            START -> MAIN WINDOW                  -->
             <div>
                 <h1>Keep Track for Employees</h1>
-              
                 <!-- <small>this is in "MyController"</small> -->
                 <div class="row">
                     <div class="col-xs-4">
@@ -91,15 +90,16 @@
                                   </div>
                               </div><br/>
                               <div class="row">
-                                  <div class="col-xs-3">
+                                  <div class="col-xs-4">
                                       <label for="search">Working Day</label>
                                       <input type="text" ng-model="tempCard.day" placeholder="Monday">
                                   </div>
-                                  <div class="col-xs-4">
+                                  <div class="col-xs-3">
                                       <label for="search">Time Start</label>
                                       <input type="text" ng-model="tempCard.timeBegin" placeholder="09-00">
                                   </div>
-                                  <div class="col-xs-4">
+                                  <div class="col-xs-1"></div>
+                                  <div class="col-xs-2">
                                       <label for="search">Time End</label>
                                       <input type="text" ng-model="tempCard.timeEnd" placeholder="18-00">
                                   </div>
@@ -109,7 +109,6 @@
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           <button type="submit" class="btn btn-primary" data-dismiss="modal" ng-click="save()">Save changes</button>
                         </div>
-              
                     </div>
                 </div>
             </div>
@@ -120,7 +119,6 @@
           <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
           </div>
         </div>
-
       </div>
     </div>
   </div>
