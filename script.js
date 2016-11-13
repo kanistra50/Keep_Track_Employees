@@ -136,7 +136,7 @@ function MyController($scope) {
         $scope.tempCard.contacts = '';
         $scope.tempCard.day = '';
         $scope.newTimeBegin = '';
-        $scope.newTimeEnd = '';=
+        $scope.newTimeEnd = '';
 
     } else {
       ///////////////////
