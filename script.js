@@ -1,4 +1,3 @@
-// Code goes here
 
 var myApp = angular.module('myApp', ['angularUtils.directives.dirPagination']);
 
@@ -87,9 +86,9 @@ function MyController($scope) {
                departament: ["PR", "employee"]},         
             ];
 
-    for (var i = 1; i <= resource.length; i++) {
+    for (var i = 0; i < resource.length; i++) {
         //console.log(resource[i-1].name);
-        $scope.cards.push([resource[i-1].name, resource[i-1].timeBegin+' - '+ resource[i-1].timeEnd]);
+        $scope.cards.push([resource[i].name, resource[i].timeBegin+' - '+ resource[i].timeEnd]);
     };
 
     $scope.newRecord = function () {
@@ -144,9 +143,11 @@ function MyController($scope) {
                 $scope.cards.push([resource[j].name, resource[j].timeBegin+' - '+resource[j].timeEnd]);
                 console.log("SAVE ADDED as NEW CELL to resource["+j+"];");
                 console.log("END ADD. NUMBER of ELEMENTS - "+resource.length);
+                
             };
 
         //console.log($scope.cards);
+          //Clear the cells for new record
     }; 
     
     $scope.cancelRecord = function () {
@@ -175,15 +176,16 @@ function MyController($scope) {
     };
 
     $scope.removeCard = function(card) {
-        //console.log(resource);
-        //console.log($scope.cards);
+        console.log(resource);
+        console.log($scope.cards);
         resource.splice($scope.cards.indexOf(card), 1);
-        //console.log(resource);
-        //console.log($scope.cards);
+        console.log(resource);
+        console.log($scope.cards);
         $scope.cards.splice($scope.cards.indexOf(card), 1);
-        //console.log(resource);
-        //console.log($scope.cards);
-       
+        console.log(resource);
+        console.log($scope.cards);
+        
+
     };
     
     $scope.pageChangeHandler = function(num) {
