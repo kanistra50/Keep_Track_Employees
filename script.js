@@ -145,9 +145,7 @@ function MyController($scope) {
                 console.log("END ADD. NUMBER of ELEMENTS - "+resource.length);
                 
             };
-
         //console.log($scope.cards);
-          //Clear the cells for new record
     }; 
     
     $scope.cancelRecord = function () {
