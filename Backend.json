@@ -1,0 +1,75 @@
+[{
+  "id": 1001, 
+  "name": "Ivanov Ivan Ivanovich", 
+  "gender": "male",
+  "contacts": "+380665553322",
+  "dateRec": "2014-05-10",
+  "day": "Monday",
+  "timeBegin": "09-00",
+  "timeEnd": "18-00",
+  "departament": [
+    "Legal", "chief"
+    ]
+},{
+  "id": 1002, 
+  "name": "Andreyev Andrey Andreyevich", 
+  "gender": "male",
+  "contacts": "+380551113322",
+  "dateRec": "2014-05-10",
+  "day": "Monday",
+  "timeBegin": "08-00",
+  "timeEnd": "17-00",
+  "departament": [
+    "Marketing", "chief"
+    ]
+},{
+"id": 1003, 
+"name": "Petrov Petr Petrovich", 
+"gender": "male",
+"contacts": "+380665553322",
+"dateRec": "2014-05-10",
+"day": "Monday",
+"timeBegin": "08-30",
+"timeEnd": "17-30",
+"departament": ["Logistic", "chief"]
+},
+{"id": 1004, 
+"name": "Nikolayev Nikolay Nikolayevich", 
+"gender": "male",
+"contacts": "+380665553322",
+"dateRec": "2014-05-10",
+"day": "Monday",
+"timeBegin": "09-30",
+"timeEnd": "18-30",
+"departament": ["Logistic", "employee"]},    
+
+{"id": 1005, 
+"name": "Aleksandrov Aleksandr Aleksandrovich", 
+"gender": "male",
+"contacts": "+380665553322",
+"dateRec": "2014-05-10",
+"day": "Monday",
+"timeBegin": "14-00",
+"timeEnd": "22-00",
+"departament": ["Head", "Director"]},     
+
+{"id": 1006, 
+"name": "Popova Irina Fedorovna", 
+"gender": "female",
+"contacts": "+380665553322",
+"dateRec": "2014-05-10",
+"day": "Monday",
+"timeBegin": "10-00",
+"timeEnd": "19-00", 
+"departament": ["HR", "employee"]},   
+
+{"id": 1007, 
+"name": "Ahuzarova Janna Khasanovna", 
+"gender": "female",
+"contacts": "+380118883322",
+"dateRec": "2014-05-10",
+"day": "Monday",
+"timeBegin": "09-00",
+"timeEnd": "18-00",
+"departament": ["PR", "employee"]},         
+]
