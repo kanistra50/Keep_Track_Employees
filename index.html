@@ -52,8 +52,16 @@
                               <td ng-bind="$index+1"></td>
                               <td ng-bind="card[0]"></td>
                               <td ng-bind="card[1]"></td>
-                              <td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal" ng-click="editCard(card)">Edit</button></td>
-                              <td><button class="btn btn-default btn-sm" ng-click="removeCard(card)">Delete</button></td>
+                              <td>
+                                <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal" ng-click="editCard(card)">
+                                  Edit
+                                </button>
+                              </td>
+                              <td>
+                                <button class="btn btn-default btn-sm" ng-click="removeCard(card)">
+                                  Delete
+                                </button>
+                              </td>
                             </tr>
                          </tbody>
                       </table>
@@ -72,7 +80,7 @@
                             </div>
                             <h4 class="modal-title" id="myModalLabel">Record</h4>
                             <br>
-                            <small>Personal ID: {{id_Num}}</small>
+                            <small ng-bind-template="Personal ID: {{id_Num}}"></small>
                         </div>
                         <div class="modal-body">      
                               <div class="row">
@@ -107,8 +115,12 @@
                               </div><br/>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancelRecord()">Close</button>
-                          <button type="submit" class="btn btn-primary" data-dismiss="modal" ng-click="save()">Save changes</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancelRecord()">
+                            Close
+                          </button>
+                          <button type="submit" class="btn btn-primary" data-dismiss="modal" ng-click="save()">
+                            Save changes
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +129,8 @@
         </div>
         <div ng-controller="OtherController" class="other-controller" >
           <div class="text-center">
-          <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
+            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html">
+            </dir-pagination-controls>
           </div>
         </div>
       </div>
