@@ -1,5 +1,8 @@
 /* Styles go here */
-
+.container {
+	position: relative;
+	margin: auto;
+}
 .my-controller {
   border: 1px solid #fcc;
   padding: 5px;
