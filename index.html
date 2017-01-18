@@ -11,15 +11,16 @@
   <script src="app/dirPagination.js"></script>
 </head>
 
-<body style="background-color: #f0f5f5">
-  <div class="container" >
+<body>
+  <section>
+        <div class="container" >
     <div class="row" >
-      <div class="col-lg-8">
+      <div class="col-md-12">
         <div ng-controller="MyController" class="my-controller"  >
 
 <!--            START -> MAIN WINDOW                  -->
             <div>
-                <h1>Keep Track for Employees</h1>
+                <h2>Keep Track for Employees</h2>
 
                 <!-- <small>this is in "MyController"</small> -->
                 <div class="row">
@@ -82,32 +83,32 @@
                         </div>
                         <div class="modal-body">      
                               <div class="row">
-                                  <div class="col-xs-4">
-                                      <label for="search">Employee name (!)</label>
-                                      <input type="text" ng-model="tempCard.name" required />
+                                  <div class="col-md-5 col-offset-md-1">
+                                      <label for="search">Employee name</label>
+                                      <input type="text" ng-model="tempCard.name" class="form-control" style="width:200px;">
                                   </div>
-                                  <div class="col-xs-2">
+                                  <div class="col-md-1 col-offset-md-1">
                                       <label for="search">Gender</label>
-                                      <input type="text" ng-model="tempCard.gender" placeholder="male" />
+                                      <input type="text" ng-model="tempCard.gender" class="form-control" style="width:70px;" placeholder="male">
                                   </div>
-                                  <div class="col-xs-2"></div>
-                                  <div class="col-xs-2">
-                                      <label for="search">Contact  (!)</label>
-                                      <input type="text" ng-model="tempCard.contacts" required />
+                                  <div class="col-md-2"></div>
+                                  <div class="col-md-2">
+                                      <label for="search">Contacts</label>
+                                      <input type="text" ng-model="tempCard.contacts" class="form-control" style="width:130px;">
                                   </div>
                               </div><br/>
                               <div class="row">
-                                  <div class="col-xs-3">
+                                  <div class="col-md-3 col-offset-md-5">
                                       <label for="search">Working Day</label>
-                                      <input type="text" ng-model="tempCard.day" placeholder="Monday" />
+                                      <input type="text" ng-model="tempCard.day" class="form-control" placeholder="Monday" style="width:100px;">
                                   </div>
-                                  <div class="col-xs-4">
+                                  <div class="col-md-3">
                                       <label for="search">Time Start</label>
-                                      <input type="text" ng-model="tempCard.timeBegin" placeholder="09-00" />
+                                      <input type="text" ng-model="tempCard.timeBegin" class="form-control" placeholder="09-00" style="width:90px;">
                                   </div>
-                                  <div class="col-xs-4">
+                                  <div class="col-md-3">
                                       <label for="search">Time End</label>
-                                      <input type="text" ng-model="tempCard.timeEnd" placeholder="18-00" />
+                                      <input type="text" ng-model="tempCard.timeEnd" class="form-control" placeholder="18-00" style="width:90px;">
                                   </div>
                               </div><br/>
                         </div>
@@ -133,6 +134,8 @@
       </div>
     </div>
   </div>
+  </section>
+  
 </body>
 
 </html>
